@@ -101,6 +101,7 @@ get_header();
         width:100%;
     }
 </style>
+<script data-ad-client="ca-pub-5286818578007218" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
 
