@@ -203,8 +203,8 @@ get_header();
                             <th scope="col">Difficulty</th>
                             <th scope="col" class="views">Views</th>
                             <th scope="col">Modified Date</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Action</th>
+                            <!-- <th scope="col">Price</th>
+                            <th scope="col">Action</th> -->
                         </tr>
                     </thead>
             <!-- the loop -->
@@ -235,22 +235,24 @@ get_header();
                                 echo $last_modified_date;
                                 ?>
                             </td>
-                            <td><?php
-                                if (get_field('price') == 0)
-                                    echo 'FREE';
-                                else
-                                    echo '$' . get_field('price');
+                            <!-- <td>
+                                <?php
+                                // if (get_field('price') == 0)
+                                //     echo 'FREE';
+                                // else
+                                //     echo '$' . get_field('price');
                                 ?>
-                            </td>
-                            <td style="opacity: 0.6"><?php
-                                if (get_field('price') == 0)
-                                    echo '<a href="' . get_field('file_link') . '"><img src="wp-content/themes/vantage/images/download.png"></a>';
-                                else {
-                                    $add_to_cart_shortcode = "[wp_cart_button name=\"" . get_the_title() . "\" price=\"" . get_field('price') . "\" file_url=\"" . get_field('file_link') . "\"]";
-                                    echo do_shortcode($add_to_cart_shortcode);
-                                }
+                            </td> -->
+                            <!-- <td style="opacity: 0.6">
+                                <?php
+                                // if (get_field('price') == 0)
+                                //     echo '<a href="' . get_field('file_link') . '"><img src="wp-content/themes/vantage/images/download.png"></a>';
+                                // else {
+                                //     $add_to_cart_shortcode = "[wp_cart_button name=\"" . get_the_title() . "\" price=\"" . get_field('price') . "\" file_url=\"" . get_field('file_link') . "\"]";
+                                //     echo do_shortcode($add_to_cart_shortcode);
+                                // }
                                 ?>
-                            </td>
+                            </td> -->
                         </tr>
             <?php endwhile; ?>
                     </tbody>
