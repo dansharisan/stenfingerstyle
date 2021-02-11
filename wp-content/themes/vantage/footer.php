@@ -25,5 +25,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+
+    <script data-ad-client="ca-pub-5286818578007218" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
